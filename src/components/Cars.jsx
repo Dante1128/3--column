@@ -1,17 +1,18 @@
+import React from 'react'
+import './styles/Cars.css'
+function Cars(props) 
+{
+    const cars=props.cars
+    const theme=cars.theme
+    return(
+        <section className={`cars cars-container ${theme}`}>
+              
+                <img src={cars.imgUrl} alt={cars.title} />
+                <h2>{cars.title}</h2>
+                <p>{cars.description}</p>
+              
+        </section>
 
-
-function Cars(props) {
-    const cars = props.cars
-    console.log(cars)
-  return (
-    <section>
-        <img src={cars[0].imgUrl} alt={cars[0].title} />
-        <h2>{cars[0].title}</h2>
-        <p>{cars[0].description}</p>
-        <button>{cars[0].button}</button>
-    </section>
-  )
+    )
 }
-
 export default Cars
-
