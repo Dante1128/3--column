@@ -6,7 +6,9 @@ function Cars(props)
     const theme=cars.theme
     return(
         <section className={`cars cars-container ${theme}`}>
-              
+
+                  
+                
                 <img src={cars.imgUrl} alt={cars.title} />
                 <h2>{cars.title}</h2>
                 <p>{cars.description}</p>
